@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/892a88f0e1.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="stylesheet" href="stylesheets/search.css">
+  <title>Search | Notes App</title>
+</head>
+<body>
+  <nav id="main-nav">
+    <div id="left-nav">
+      <ul>
+        <li>
+          <a href="index.html">
+            <i class="fa-solid fa-note-sticky"></i>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="search.html">Search</a>
+        </li>
+      </ul>
+    </div>
+    <div id="right-nav"></div>
+  </nav>
+  <main>
+    <h1>Search Notes</h1>
+    <section id="search-notes-section">
+      <h3>Search Existing Notes:</h3>
+      <form>
+        <div class="filter-params">
+          <div class="form-group">
+            <label for="title">
+              <strong>Title</strong>
+            </label>
+            <input type="checkbox" id="title">
+          </div>
+          <div class="form-group">
+            <label for="body">
+              <strong>Body</strong></label>
+            <input type="checkbox" id="body">
+          </div>
+          <div class="form-group">
+            <label for="search">
+              <strong>Enter search term</strong>
+            </label><br />
+            <input type="text" id="search" placeholder="Some search term...">
+          </div>
+          <div id="buttons">
+            <button id="search-btn">Search</button>
+            <button id="clear-btn">Clear Search</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <section id="search-results-section">
+      <div id="results"></div>
+    </section>
+  </main>
+
+  <script src="javascripts/search.js"></script>
+</body>
+</html>

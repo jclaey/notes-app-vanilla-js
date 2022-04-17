@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #333;
+  --secondary-color: #ff5c33;
+}
+
+/* FORM */
+#search-btn {
+  background-color: var(--primary-color);
+}
+
+#search-btn:hover {
+  background-color: #4d4d4d;
+}
+
+#clear-btn {
+  background-color: var(--secondary-color);
+}
+
+#clear-btn:hover {
+  background-color: #ff471a;
+}

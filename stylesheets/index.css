@@ -81,7 +81,7 @@ nav ul li {
 
 nav ul li a {
   color: var(--secondary-color);
-  font-weight: 600;
+  font-weight: 550;
   transition: 0.2s;
 }
 
@@ -90,7 +90,7 @@ nav ul li a:hover {
 }
 
 /* icons */
-.fa-note-sticky {
+.fa-solid.fa-note-sticky {
   color: #fff;
 }
 
