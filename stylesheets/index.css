@@ -63,6 +63,32 @@ form input[type="text"] {
   border-radius: 3px;
 }
 
+/* navigation */
+nav {
+  display: flex;
+  min-height: 50px;
+  background-color: var(--primary-color);
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: var(--secondary-color);
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
 /* icons */
 .fa-note-sticky {
   color: #fff;
