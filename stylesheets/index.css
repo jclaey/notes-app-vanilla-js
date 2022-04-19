@@ -94,6 +94,11 @@ nav ul li a:hover {
   color: #fff;
 }
 
+/* notes */
+.note-title {
+  color: var(--secondary-color);
+}
+
 /* HOME PAGE STYLING */
 
 #add-note-btn {

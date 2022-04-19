@@ -45,7 +45,7 @@ const renderNotes = () => {
     storedNotes.forEach(note => {
       output += `
         <div>
-          <a href='../edit.html#${note.id}'>
+          <a class="note-title" href='../edit.html#${note.id}'>
             <strong>${note.title}</strong>
           </a>
           <p>${note.body}

@@ -18,6 +18,8 @@ const filter = e => {
     filteredList = notes.filter(note => note.title.toLowerCase().includes(searchInput.value));
   } else if (bodyInput.checked) {
     filteredList = notes.filter(note => note.body.toLowerCase().includes(searchInput.value));
+  } else if (!titleInput.checked && !bodyInput.checked) {
+    filteredList = -1;
   }
 
   renderNotes(filteredList);
@@ -36,7 +38,9 @@ const renderNotes = arr => {
       </div>
     `;
   } else {
-    if (arr.length > 0) {
+    if (arr === -1) {
+      output += '<p style="color: red;">Please choose to search by title, body, or both.</p>';
+    } else if (arr.length > 0) {
       arr.forEach(el => {
         output += `
           <div>
