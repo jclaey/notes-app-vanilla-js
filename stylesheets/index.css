@@ -101,11 +101,11 @@ nav ul li a:hover {
 
 /* HOME PAGE STYLING */
 
-#add-note-btn {
+.btn {
   background-color: var(--primary-color);
   color: #fff;
 }
 
-#add-note-btn:hover {
+.btn:hover {
   background-color: #4d4d4d;
 }
